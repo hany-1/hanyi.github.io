@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Han Yi | Software Engineer</title>
+
+    <!-- HOST CDN -->
+    <!-- MATERIAL ICONS & FONT -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <!-- jQuery & Materialize CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- LOCAL -->
+    <script src="scripts/script.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="nav-wrapper nav-custom">
+                <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="#home" class="nav-link">home</a></li>
+                    <li><a href="#about" class="nav-link">about</a></li>
+                    <li><a href="#projects" class="nav-link">projects</a></li>
+                    <li><a href="#experiences" class="nav-link">experiences</a></li>
+                    <li><a href="#skills" class="nav-link">skills</a></li>
+                    <li><a href="#contact" class="nav-link">contact</a></li>
+                    <li><a href="#resume" class="nav-link">resume</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-menu">
+            <li><a href="#home" class="nav-link">home</a></li>
+            <li><a href="#about" class="nav-link">about</a></li>
+            <li><a href="#projects" class="nav-link">projects</a></li>
+            <li><a href="#experiences" class="nav-link">experiences</a></li>
+            <li><a href="#skills" class="nav-link">skills</a></li>
+            <li><a href="#contact" class="nav-link">contact</a></li>
+            <li><a href="#resume" class="nav-link">resume</a></li>
+        </ul>
+    </header>
+
+    <section id="home">
+        <div id="pt" class="canvas"></div>
+        <h1>Hello, I'm <span id="name">Han Yi</span></h1>
+        <h2 class="center">I'm a Full Stack Web Developer</h2>
+        <a class="waves-effect waves-light btn-large" id="view-my-work-button" href="#about">
+            View my work
+            <i class="material-icons right">arrow_forward</i>
+        </a>
+    </section>
+
+
+    <section id="about" class="mt-5 mb-5">
+        <div class="container flex flex-column mb-5">
+            <div class="header">
+                about
+            </div>
+            <div class="header-bar"></div>
+        </div>
+        <div class="container">
+            <div class="card-panel indigo accent-3">
+                <div class="card-content white-text">
+                    <div class="row">
+                        <div class="col s12 m6 mt-4">
+                            <div class="img-container">
+                                <div class="me"></div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 mt-4">
+                            <span class="card-title">Who's this guy?</span>
+                            <p id="description">
+                                I'm a Front-End Developer with a passion for creating intuitive, dynamic user
+                                experiences. Skilled in both front-end and back-end development, as well as mobile app
+                                development with Flutter. Proficient in PHP, Python, JavaScript, Dart, and C#. Let's
+                                create something special.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="mt-5 mb-5">
+        <div class="container flex flex-column mb-5">
+            <div class="header">
+                projects
+            </div>
+            <div class="header-bar"></div>
+        </div>
+        <div class="container">
+            <div class="card medium">
+                <div class="card-image">
+                    <img src="assets/screenshot-simple-cms.png">
+                </div>
+                <div class="card-content">
+                    <p class="card-title text-blue">Simple CMS</p>
+                    <p class="text-blue">
+                        A simple content management system that can be use as a personal portfolio or blogging
+                        site.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a class="btn tooltipped indigo accent-3" data-position="bottom"
+                        href="https://simple-cms-production.up.railway.app/" data-tooltip="Go to project"
+                        target="_blank">
+                        <i class="material-icons">exit_to_app</i>
+                    </a>
+                    <button class="btn tooltipped indigo accent-3 modal-trigger activator" data-position="bottom"
+                        data-target="simple-cms-info-modal" data-tooltip="More information">
+                        <i class="material-icons">event_note</i>
+                    </button>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Simple CMS</span>
+                    <p class="text-blue">
+                        A simple content management system that can be use as a personal portfolio or blogging
+                        site.
+                    </p>
+                    <h5 class="text-blue">Technologies Used:</h5>
+                    <p class="text-blue">HTML, CSS, Javascript, PHP, Laravel, jQuery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiences" class="mt-5 mb-5">
+        <div class="container flex flex-column mb-5">
+            <div class="header">
+                experiences
+            </div>
+            <div class="header-bar"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="row">
+                                <div class="col s12 m12">
+                                    <span class="card-title">
+                                        <a href="https://www.bio-energy.com.my/" target="_blank"
+                                            class="text-blue">BioEnergy Projects Sdn
+                                            Bhd</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <hr class="grey">
+                            <h4 class="brown-text">Software Engineer</h4>
+                            <p>
+                                <em class="grey-text">
+                                    "Creating Value, Always!"
+                                </em>
+                            </p>
+                            <p class="text-blue">
+                                Join as when merged with Trilobyte Sdn Bhd
+                            </p>
+                            <ul>
+                                <li class="text-blue">
+                                    &#x2022; Assists in maintenance and development for legacy system for semicon-
+                                    industry.
+                                </li>
+                                <li class="text-blue">
+                                    &#x2022; Enhancements and improvements for legacy system.
+                                </li>
+                                <li class="text-blue">
+                                    &#x2022; Development of in-house HEPA oven software (SONIK)
+                                </li>
+                                <li class="text-blue">
+                                    &#x2022; Development of remote equipment control software. (REI)
+                                </li>
+                                <li class="text-blue">
+                                    &#x2022; R&D for OCR(Optical Character Recognition) screen captured to get the data
+                                    from
+                                    the
+                                    screen.
+                                </li>
+                                <li class="text-blue">
+                                    &#x2022; Provide support to customers regarding SONIK, REI, and EIC software.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-action">
+                            <span class="text-blue">Sept 2021 - April 2024 | Perai, Malaysia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="row">
+                                <div class="col s12 m12">
+                                    <span class="card-title">
+                                        <a href="https://3b.my/" target="_blank" class="text-blue">Trilobyte Sdn Bhd</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <hr class="grey">
+                            <h4 class="brown-text">Programmer</h4>
+                            <p>
+                                <em class="grey-text">
+                                    "CONNECTING BUSINESS"
+                                </em>
+                            </p>
+                            <ul>
+                                <li class="text-blue">
+                                    &#x2022; Assists in maintenance and development of existing or legacy web and mobile
+                                    application.
+                                </li>
+                                <li class="text-blue">
+                                    &#x2022; Involved in developing custom ERP system for the customer.
+                                </li>
+                                <li class="text-blue">
+                                    &#x2022; Provide support to the customer (ERP system).
+                                </li>
+                                <li class="text-blue">
+                                    &#x2022; Discussed on the improvements for existing system or application.
+                                </li>
+                                <li class="text-blue">
+                                    &#x2022; Involve in development of PoC(Proof-of-concept) application.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-action">
+                            <span class="text-blue">Sept 2020 - Sept 2021 | Perai, Malaysia </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="mt-5 mb-5">
+        <div class="container flex flex-column mb-5">
+            <div class="header">
+                skills
+            </div>
+            <div class="header-bar"></div>
+        </div>
+        <div class="container">
+            <div class="row row-flex">
+                <div class="col s3 m3">
+                    <div class="flex flex-column">
+                        <img src="assets/html5.png" alt="html5 logo" class="responsive-img" />
+                        <span class="text-blue">HTML5</span>
+                    </div>
+                </div>
+                <div class="col s3 m3">
+                    <div class="flex flex-column">
+                        <img src="assets/css3.png" alt="css3 logo" class="responsive-img" />
+                        <span class="text-blue">CSS3</span>
+                    </div>
+                </div>
+                <div class="col s3 m3">
+                    <div class="flex flex-column">
+                        <img src="assets/javascript.png" alt="javascript logo" class="responsive-img" />
+                        <span class="text-blue">Javascript</span>
+                    </div>
+                </div>
+                <div class="col s3 m3 ">
+                    <div class="flex flex-column">
+                        <img src="assets/php.png" alt="javascript logo" class="responsive-img" />
+                        <div class="text-blue">PHP</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-flex">
+                <div class="col s3 m3 ">
+                    <div class="flex flex-column">
+                        <img src="assets/c-sharp.png" alt="C Sharp logo" class="responsive-img" />
+                        <span class="text-blue">C#</span>
+                    </div>
+                </div>
+                <div class="col s3 m3">
+                    <div class="flex flex-column">
+                        <img src="assets/flutter-and-dart.png" alt="Flutter and Dart" class="responsive-img" />
+                        <span class="text-blue">Flutter & Dart</span>
+                    </div>
+                </div>
+                <div class="col s3 m3">
+                    <div class="flex flex-column">
+                        <img src="assets/java.png" alt="Java logo" class="responsive-img" />
+                        <span class="text-blue">Java</span>
+                    </div>
+                </div>
+                <div class="col s3 m3">
+                    <div class="flex flex-column">
+                        <img src="assets/python.png" alt="Python logo" class="responsive-img" />
+                        <span class="text-blue">Python</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col s3 m3">
+                    <div class="flex flex-column">
+                        <img src="assets/laravel.png" alt="laravel logo" class="responsive-img" />
+                        <span class="text-blue">Laravel</span>
+                    </div>
+                </div>
+                <div class="col s3 m3">
+                    <div class="flex flex-column">
+                        <img src="assets/bootstrap.png" alt="bootstrap logo" class="responsive-img" />
+                        <span class="text-blue">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="col s3 m3">
+                    <div class="flex flex-column">
+                        <img src="assets/materialize.png" alt="jQuery logo" class="responsive-img" />
+                        <span class="text-blue">Materialize</span>
+                    </div>
+                </div>
+                <div class="col s3 m3">
+                    <div class="flex flex-column">
+                        <img src="assets/jquery.png" alt="jQuery logo" class="responsive-img" />
+                        <span class="text-blue">jQuery</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s3 m3">
+                    <div class="flex flex-column">
+                        <img src="assets/vue.png" alt="VueJs logo" class="responsive-img" />
+                        <span class="text-blue">Vue2</span>
+                    </div>
+                </div>
+                <div class="col s3 m3">
+                    <div class="flex flex-column">
+                        <img src="assets/mysql.png" alt="MySQL logo" class="responsive-img" />
+                        <span class="text-blue">MySQL</span>
+                    </div>
+                </div>
+                <div class="col s3 m3">
+                    <div class="flex flex-column">
+                        <img src="assets/mongodb.png" alt="MongoDB logo" class="responsive-img" />
+                        <span class="text-blue">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="mt-5 mb-5">
+        <div class="container flex flex-column mb-5">
+            <div class="header">
+                contact
+            </div>
+            <div class="header-bar"></div>
+        </div>
+        <div class="container mb-5">
+            <form action="https://fabform.io/f/jap0o6C" method="post">
+                <div class="container">
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <label for="name" class="font-size-1">
+                                Name
+                            </label>
+                            <input type="text" class="validate" name="name" id="name" required />
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input type="email" class="validate" name="email" id="email" required />
+                            <label for="email" class="font-size-1">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m12">
+                            <textarea id="message-textarea" name="message" class="materialize-textarea"
+                                required></textarea>
+                            <label for="message-textarea" class="font-size-1">Message</label>
+                        </div>
+                    </div>
+                    <button type="submit" id="submit-btn"
+                        class="btn waves-effect waves-light indigo accent-3 right">Submit<i
+                            class="material-icons right">send</i></button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer-custom">
+        <div class="container flex flex-row">
+            <a href="https://www.linkedin.com/in/han-yi-052b57198" target="_blank" class="icon">
+                <i class="fa-brands fa-linkedin fa-2xl"></i>
+            </a>
+            <a href="https://github.com/hany-1" target="_blank" class="icon">
+                <i class="fa-brands fa-github fa-2xl"></i>
+            </a>
+            <a href="mailto:hanyi7885@hotmail.com" target="_blank" class="icon">
+                <i class="fa-solid fa-envelope fa-2xl"></i>
+            </a>
+        </div>
+        <div class="container flex flex-column">
+            Han Yi &copy; 2024
+        </div>
+    </footer>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
